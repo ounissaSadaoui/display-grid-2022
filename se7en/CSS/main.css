@@ -1,0 +1,152 @@
+/* reset */
+html{
+    font-size: 62.5;
+    background: url(../asset/johndoe.webp) center center/ cover fixed;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem, sans-serif;
+    margin: 0;
+    line-height: 1.6rem;
+    letter-spacing: .1rem;
+}
+h1,h2, h3, h4, h5, h6, p,
+ol, ul, figure, div{
+    margin: auto;
+    padding: 1rem;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+img{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+
+}
+/* theme */
+header{
+    background-color:#a82219;
+    height: 100px;
+    line-height: 5rem;
+    box-shadow:1.65rem 2.6rem rgb(97, 14, 21);
+    opacity: .8;
+   
+}
+
+header *{
+    font-weight: 200;
+    font-size: 4.5rem;
+    text-align: center;
+    text-shadow: .1rem .1rem .1rem beige;
+}
+header h1::before{
+    content: "\01F3AC";
+   
+}
+/*figure{
+    max-width: 60%;
+    margin: auto;
+    background-color: black;
+    color: beige;
+} */
+figure, div {
+    background-color: black;
+    color:beige;
+    max-width: 70%;
+    
+}
+
+.large-table-primary > table tbody tr:nth-child(2n){ 
+   background-color:rgb(236, 72, 31);
+  color: black;
+}
+.large-table-primary > table thead th{
+    background-color: rgb(236, 72, 31);
+    color: black  ;
+}
+    
+
+.large-table-primary > table{
+   
+    width: 100%;
+    color: antiquewhite;
+    background-color: rgb(184, 39, 3);
+}
+tr{
+    text-align: left;
+
+}
+
+.large-table-primary > table, thead th, tbody td{
+    border-collapse: collapse;
+    border: solid .2rem black;
+    padding: .8rem;
+    line-height: 1.5rem;
+   
+
+}
+.acteurs{
+    max-width: 70%;
+    overflow: hidden;
+}
+.acteurs ul {
+    padding: 1rem 0 0 1rem;
+}
+.acteurs ul li {
+   display: block;
+   width: calc(100% / 3 - 1rem);
+   float: left;
+   margin: O;
+}
+
+.acteurs > #liste-acteurs > li :hover{
+    opacity: .6;
+    width: 120%;
+
+}
+
+.gallery{
+    max-width: 70%;
+    overflow: hidden;
+}
+
+
+.gallery ul{
+   padding: 1rem 0 0 1rem;
+
+}
+.gallery ul li{
+    display: block;
+    float: left;
+    width: calc(100% / 3 - 1rem);
+    margin: 0 1rem 1rem O;
+}
+
+.gallery ul li:nth-child(4),:is(ul li:nth-child(5)){
+width: calc(100% / 2 - 1rem);
+}
+
+.gallery ul li:nth-child(6){
+    width: calc(100% / 1 - 1rem);
+}
+#photos li:nth-child(n){
+    height: 20rem;
+}
+#photos li:nth-child(n):hover{
+    opacity: .6;
+}
+footer{
+    color: beige;
+    background-color: black;
+    text-align: center;
+    max-width:70%  ;
+    margin: auto;
+    opacity: .6;
+}
