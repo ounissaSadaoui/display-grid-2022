@@ -1,0 +1,114 @@
+/* super reset , RESET QU'ON PEUT UTIISER TOUT LE TEMPS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+html{
+    font-size: 62.5%;
+}
+body {
+   
+    margin:auto;
+    letter-spacing: 0.1rem;
+    line-height: 1.6;
+    background-color:rgb(46, 42, 42);
+}
+h1,h2,h3,h4,h5,h6,
+p,ul,ol,figure{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{ /* il faut avoir ce bloc pour les images */
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    object-fit: cover;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+   
+}
+button{
+    background-color:red;
+    border:0;
+    padding: 0;
+    font-size: inherit;
+}
+
+/* theme */
+
+
+
+
+/* variables css */
+header h1{
+    text-align: center;
+    color: rgb(238, 230, 255);
+    font-weight: 200;
+    line-height: 8rem;
+
+
+}
+
+/* grid , ma grille */
+
+.gallery-primary{
+    max-width: 120rem;
+    margin: 5rem auto 5rem;
+    overflow: hidden;
+    background: #ffff;
+
+}
+
+.gallery-primary ul{ /* initialise, c'est donner display, grid et gap, c'est toujours au parent */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.gallery-primary ul li:nth-child(5){ /* une image sur 3 COLONNES, */
+    grid-column: 1 / 3;
+}
+
+.gallery-primary ul li:nth-child(6){ /* À partir de la 3ème colonne, une image sur 3 */
+    grid-column: 3 / 5;
+}
+
+.gallery-primary ul li:nth-child(7){
+    grid-column: 1 / 5;
+}
+footer *{
+    text-align: center;
+    color: #ffff;
+}
+
+/* responsive */
+
+@media screen and (max-width: 100rem){
+
+    .gallery-primary ul{ /* initialise, c'est donner display, grid et gap, c'est toujours au parent */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5rem;
+        padding: 1rem;
+    }
+    .gallery-primary ul li:nth-child(5){
+        grid-column: 1 / 3;
+    } /* une image sur 3 COLONNES, */
+    
+    .gallery-primary ul li:nth-child(6),/* À partir de la 3ème colonne, une image sur 3 */
+    
+    .gallery-primary ul li:nth-child(7){
+        grid-column: auto;
+    }
+    
+    footer *{
+        text-align: center;
+        color: #ffff;
+    }
+}
